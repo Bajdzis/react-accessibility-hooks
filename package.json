@@ -1,0 +1,64 @@
+{
+	"name": "react-accessibility-hooks",
+	"version": "1.0.0",
+	"description": "React hooks for create accessibility components",
+	"scripts": {
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"test": "jest",
+		"test:coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
+		"lint": "eslint ./src/ --ext .ts --ext .tsx ",
+		"prerelease": "standard-version",
+		"release": "git push --follow-tags origin master"
+	},
+	"main": "dist/src/index.js",
+	"types": "dist/types/index.d.ts",
+	"typings": "dist/types/index.d.ts",
+	"keywords": [
+		"react-accessibility-hooks",
+		"react",
+		"accessibility",
+		"a11y",
+		"hooks",
+		"typings",
+		"typescript",
+		"types"
+	],
+	"optionalDependencies": {},
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	},
+	"devDependencies": {
+		"@testing-library/react": "^9.4.0",
+		"@types/jest": "^24.9.1",
+		"@typescript-eslint/eslint-plugin": "^2.20.0",
+		"@typescript-eslint/parser": "^2.20.0",
+		"coveralls": "^3.0.9",
+		"eslint": "^6.8.0",
+		"eslint-plugin-react": "^7.18.3",
+		"jest": "^24.9.0",
+		"pre-commit": "^1.2.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"standard-version": "^7.1.0",
+		"ts-jest": "^24.3.0",
+		"tslint": "^5.20.1",
+		"typescript": "^3.8.2"
+	},
+	"dependencies": {},
+	"author": "Rafał 'Bajdzis' Budzis <rafal@budzis.pl>",
+	"license": "MIT",
+	"pre-commit": [
+		"lint",
+		"test"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bajdzis/react-accessibility-hooks.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Bajdzis/react-accessibility-hooks/issues"
+	},
+	"homepage": "https://github.com/Bajdzis/react-accessibility-hooks#readme"
+}
