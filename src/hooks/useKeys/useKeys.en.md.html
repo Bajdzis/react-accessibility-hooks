@@ -1,0 +1,25 @@
+<html lang="pl" data-reactroot=""><head><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><script src="https://unpkg.com/react@16/umd/react.production.min.js"></script><script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script><title>tile</title><template id="markdown"># useKeys
+
+hooks for handler keyboard events.
+
+## usage
+
+```jsx
+const ESC_KEY = 27;
+
+const HandleEscComponent= ({onEscPress}) =&gt; {
+    useKeys([ESC_KEY], () =&gt; {
+        console.log(&#x27;Esc pressed!&#x27;);
+    });
+    return &lt;div&gt;...&lt;/div&gt;;
+};
+```
+</template></head><body><div id="app"><div><div><h1>useKeys</h1><h2>usage</h2><div><div>const ESC_KEY = 27;
+
+const HandleEscComponent= ({onEscPress}) =&gt; {
+    useKeys([ESC_KEY], () =&gt; {
+        console.log(&#x27;Esc pressed!&#x27;);
+    });
+    return &lt;div&gt;...&lt;/div&gt;;
+};
+</div></div></div></div></div></body></html>

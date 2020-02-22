@@ -9,7 +9,8 @@
 		"test:coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
 		"lint": "eslint ./src/ --ext .ts --ext .tsx ",
 		"prerelease": "standard-version",
-		"release": "git push --follow-tags origin master"
+		"release": "git push --follow-tags origin master",
+		"doc:generate": "ts-node --files docs/index.tsx "
 	},
 	"main": "dist/src/index.js",
 	"types": "dist/types/index.d.ts",
@@ -32,6 +33,7 @@
 	"devDependencies": {
 		"@testing-library/react": "^9.4.0",
 		"@types/jest": "^24.9.1",
+		"@types/node": "^13.7.4",
 		"@typescript-eslint/eslint-plugin": "^2.20.0",
 		"@typescript-eslint/parser": "^2.20.0",
 		"coveralls": "^3.0.9",
@@ -43,10 +45,14 @@
 		"react-dom": "^16.12.0",
 		"standard-version": "^7.1.0",
 		"ts-jest": "^24.3.0",
+		"ts-node": "^8.6.2",
 		"tslint": "^5.20.1",
 		"typescript": "^3.8.2"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"@mdx-js/react": "^1.5.7",
+		"mdx.macro": "^0.2.9"
+	},
 	"author": "Rafał 'Bajdzis' Budzis <rafal@budzis.pl>",
 	"license": "MIT",
 	"pre-commit": [
